@@ -10,7 +10,9 @@ import authConfig from './config/auth.config';
 import databaseConfig from './config/database.config';
 import { AdminModule } from './modules/admin/admin.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { GpuModule } from './modules/gpu/gpu.module';
 import { UserModule } from './modules/user/user.module';
+
 
 @Module({
   imports: [
@@ -33,6 +35,7 @@ import { UserModule } from './modules/user/user.module';
     AuthModule,
     UserModule,
     AdminModule,
+    GpuModule,
   ],
   controllers: [AppController],
   providers: [AppService],
